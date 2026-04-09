@@ -38,5 +38,5 @@ This round is focussed on more exploration (instead of a balanced exploration - 
 **4th - 10th Iteration - To be updated**
 
 **Section 5: Link to Model Card and Data Sheet**
+[View file](https://github.com/MMehta-stack/MLAI_Project/blob/main/BBO%20Model%20Card.md)
 [View file](https://github.com/MMehta-stack/MLAI_Project/blob/main/BBO%20Data%20Sheet.md)
-
