@@ -36,3 +36,6 @@ The 2nd strategy was consensus-based selection: new query points were chosen whe
 This round is focussed on more exploration (instead of a balanced exploration - exploitation approach). To identify better new query points in diverse, uncertain regions (exploration), Thompson Sampling (TS) approach and UCB were used to identify new query points. The result of TS approach was compared to the results of UCB approach to select new query points. Acquisition parameters (e.g., exploration weight) were adjusted heuristically to encourage stronger exploration. 
 
 **4th - 10th Iteration - To be updated**
+
+**Section 5: Link to Model Card and Data Sheet**
+
