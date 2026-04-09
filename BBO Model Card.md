@@ -5,7 +5,8 @@ Bayesian Optimisation with Gradient Enhancement, CNN Surrogates and Optuna HPO
 
 1. Overview
 
-Approach Name: BBO (HPO-Enhanced Black Box Optimisation)
+Approach 
+Name: BBO (HPO-Enhanced Black Box Optimisation)
 Model Type: Gaussian Process surrogate with CNN augmentation and Optuna-driven HPO
 Version: BBO1 → BBO2 → … → BBO6 (CNN-Enhanced GP) → BBO7/10 (Optuna HPO)
 
