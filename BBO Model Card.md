@@ -5,7 +5,8 @@ Bayesian Optimisation with Gradient Enhancement, CNN Surrogates and Optuna HPO
 
 1. Overview
 
-Approach Name: BBO (HPO-Enhanced Black Box Optimisation)
+Approach 
+Name: BBO (HPO-Enhanced Black Box Optimisation)
 Model Type: Gaussian Process surrogate with CNN augmentation and Optuna-driven HPO
 Version: BBO1 → BBO2 → … → BBO6 (CNN-Enhanced GP) → BBO7/10 (Optuna HPO)
 
@@ -31,7 +32,7 @@ Strategy across ten rounds
 Each round follows an identical eight-step pipeline. The strategy does not explicitly vary by round number, but adapts continuously as new observations accumulate: with more data the GP fits better, gradient estimates sharpen, and the HPO studies warm-start from prior runs (Optuna study persistence).
 
 
-Eight-step pipeline (per round)
+Eight-step pipeline 
 1. Kernel + GP Noise HPO — selects best kernel (RBF, Matérn-2.5, Matérn-1.5, ARD variants); tunes alpha, n_restarts, WhiteKernel bounds via TPE
 2. Gradient Enhancement — augments observations with finite-difference virtual gradient points (epsilon=0.01)
 3. Residual Corrector CNN HPO — tunes architecture via CMA-ES + MedianPruner; trains ResidualCorrectorCNN on LOO residuals
@@ -41,6 +42,7 @@ Eight-step pipeline (per round)
 7. CNN pre-screen + corrected UCB — shortlists top prescreen_k candidates, applies residual correction, computes UCB
 8. L-BFGS-B local refinement — polishes the top candidate from step 7 within bounds
 
+The above stated eight steps are followed for every function F1-F8
 
 
 4. Performance
