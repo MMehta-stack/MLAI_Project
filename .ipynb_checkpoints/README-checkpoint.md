@@ -54,7 +54,7 @@ Three structural layers sit on top of this foundation:
 
 ---
 
-## Iteration History
+## Model and Hyperparameter optimisation - Iteration History
 
 ### BBO1–5 — Baseline GP with EI and UCB
 Initial query points were selected using Expected Improvement (EI), which balances exploitation of high-predicted regions with exploration of uncertain ones. A consensus-based approach was also tested — selecting points where both EI and UCB agreed, indicating high-confidence regions where the surrogate model's mean and uncertainty were aligned. Thompson Sampling (TS) was assessed alongside UCB to encourage broader exploration in diverse, uncertain regions.
@@ -138,10 +138,10 @@ numpy           — array operations
 
 ```
 ├── src       # Final optimisation notebook
-├── data       # Initial data files and weekly new query point submissions (inputs) with results (outputs)
+├── data      # Initial data files and weekly new query point submissions (inputs) with results (outputs)
 ├── docs      # Model card, Data Sheet and presentation summary
-├── version                        # Weekly enhanced version of BBO notebooks
-└── README.md                  # This file
+├── version   # Weekly enhanced version of BBO notebooks
+└── README.md # This file
 ```
 
 ---
