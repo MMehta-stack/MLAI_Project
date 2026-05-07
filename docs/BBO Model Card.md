@@ -89,5 +89,6 @@ The most significant limitation of the approach is that the validity of the reco
 
 ## Trade-offs
 
-Earlier versions included a CNN to help predict and correct the GP's output. The assumption was that a more complex model would produce better results. In practice it did not — the CNN struggled with functions whose outputs vary at very different scales (F4 ranges across 56 units; F5 across 8,662), and the corrections it made were inconsistent. It also added ten times the runtime of the plain GP with no measurable improvement in result quality. Removing it made the pipeline faster and the acquisition recommendations more reliable.
+The most significant trade-off was between model complexity and reliability. Adding the CNN felt like a logical improvement but introduced instability across functions with very different output scales. Removing it was the right decision but cost several rounds. The exploration-exploitation balance was handled differently per function — strong cluster structure (F1, F2) justified earlier exploitation; sparse high-dimensional functions (F7, F8) required sustained exploration throughout. The hardest decision was setting the silhouette threshold at 0.22 — too high and useful clustering is discarded; too low and false structure misleads the acquisition. The fixed threshold worked well overall but a data-driven adaptive threshold would have been more principled.
+
 
