@@ -40,7 +40,7 @@ The project works in an iterative manner, with every iteration providing new que
 
 ---
 
-## Overall Approach
+## Model - Overall Approach
 
 The core framework is a **Gaussian Process (GP) surrogate model** combined with an **Upper Confidence Bound (UCB) acquisition function**. The GP builds a probabilistic map of the landscape — estimating both the expected output and the uncertainty at every point in the input space. UCB then guides query selection by balancing:
 
