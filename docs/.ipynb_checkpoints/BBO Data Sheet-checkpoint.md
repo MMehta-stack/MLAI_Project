@@ -132,16 +132,16 @@ Five enhancements inspired by PCA principles were added:
 
 **Key Metrics and Results**
 
-| Fn | Dim | n  | Silhouette        | ARD top   | |PC1-y| | Landscape notes                          |
-|----|-----|----|-------------------|-----------|--------|-------------------------------------------|
-| F1 | 2D  | 21 | 0.53 — Strong     | d1 (89%)  | 0.14   | Compact; 95% near best                    |
-| F2 | 2D  | 21 | 0.47 — Strong     | d0 (100%) | 0.28   | Effectively 1-dimensional                 |
-| F3 | 3D  | 26 | 0.36 — Moderate   | d2 (91%)  | 0.60   | Single axis drives output                 |
-| F4 | 4D  | 41 | 0.27 — Moderate   | d2 (25%)  | 0.75   | Balanced; all dims matter                 |
-| F5 | 4D  | 31 | 0.30 — Moderate   | d3 (34%)  | 0.58   | Sharp peak — 96% gain found               |
-| F6 | 5D  | 31 | 0.21 — Skipped    | d1 (27%)  | 0.75   | Diffuse; pure UCB used                   |
-| F7 | 6D  | 41 | 0.23 — Weak       | d4 (53%)  | 0.32   | Sparse; d4 is key signal                 |
-| F8 | 8D  | 51 | 0.13 — Skipped    | d2 (20%)  | 0.93   | Isotropic — PCA pre-projection applied   |
+| Fn | Dim | n  | Silhouette        | ARD top   | \|PC1-y\| | Landscape notes                          |
+|----|-----|----|-------------------|-----------|----------|-------------------------------------------|
+| F1 | 2D  | 21 | 0.53 — Strong     | d1 (89%)  | 0.14     | Compact; 95% near best                    |
+| F2 | 2D  | 21 | 0.47 — Strong     | d0 (100%) | 0.28     | Effectively 1-dimensional                 |
+| F3 | 3D  | 26 | 0.36 — Moderate   | d2 (91%)  | 0.60     | Single axis drives output                 |
+| F4 | 4D  | 41 | 0.27 — Moderate   | d2 (25%)  | 0.75     | Balanced; all dims matter                 |
+| F5 | 4D  | 31 | 0.30 — Moderate   | d3 (34%)  | 0.58     | Sharp peak — 96% gain found              |
+| F6 | 5D  | 31 | 0.21 — Skipped    | d1 (27%)  | 0.75     | Diffuse; pure UCB used                   |
+| F7 | 6D  | 41 | 0.23 — Weak       | d4 (53%)  | 0.32     | Sparse; d4 is key signal                 |
+| F8 | 8D  | 51 | 0.13 — Skipped    | d2 (20%)  | 0.93     | Isotropic — PCA pre-projection applied   |
 
 **Most influential findings**
 **F5** — This contains the most sharply localised peak across all eight functions.The BBO11 suggested query point returned an output of 8,662. F5 has only 3% of observations within 10% of the optimum, confirming a sharply localised peak that uniform sampling was unlikely to find.
